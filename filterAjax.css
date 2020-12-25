@@ -1,0 +1,30 @@
+.filterAjax-form{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+	&.loading{
+		pointer-events: none;
+		opacity: .4;
+	}
+
+}
+.filterAjax-result{
+	margin: 40px 0;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 20px;
+}
+.filterAjax-more{
+	height: 40px;
+	background-color: #ccc;
+	background-repeat: no-repeat;
+	background-position: center;
+	
+	&.loading{
+		color: rgba(0,0,0,0);
+		background-image: url(https://samherbert.net/svg-loaders/svg-loaders/three-dots.svg);
+		background-size: 50%;	
+	}
+ }
