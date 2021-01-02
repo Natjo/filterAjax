@@ -14,6 +14,7 @@
  */
 
 function FilterAjax(params) {
+	const url = paramsData.wp_ajax_url;
 	let page = form.dataset.currentPage || 1;
     let items_per_page = form.dataset.itemsPerPage || 8;
     const namespace = params.namespace || 'filterAjax';
