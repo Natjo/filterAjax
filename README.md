@@ -3,16 +3,13 @@
 
 ![version](https://img.shields.io/github/manifest-json/v/Natjo/filterAjax)
 
-Ajax form filter with more button.  
-
-
-
-
+Ajax form filter with inline template for item and more button.  
 
 ## Form filter
 `data-items-per-page` - number of items to show  
 `data-current-page` - initial page depending of the items in th DOM. 
-*if data-items-per-page = 8 and 16 items are in DOM, set data-current-page="2"*
+
+> if data-items-per-page = 8 and 16 items are in DOM, set data-current-page="2"
 ```html
 	<form action="myAction" class="filterAjax-form" data-nonce="myNonce" novalidate="novalidate" 
 	role="form" aria-label="Search filter" 
@@ -37,7 +34,7 @@ Ajax form filter with more button.
 ```
 ## Result
 Liste where items will be append.  
-Button `filterAjax-more` - add items until `max_page`
+Button `filterAjax-more` add items until `max_page`.
 ```html
 <ul class="filterAjax-result">
 	<li class="card">
@@ -65,7 +62,7 @@ Template of items for ajax response.
 </template>
 ```
 
-## Javscript
+## Javascript
 ```javascript
 const myfilter = new FilterAjax({
     //namespace: 'filterAjax',
@@ -78,6 +75,7 @@ const myfilter = new FilterAjax({
 ```
 
 ## php
+
 ```php
 add_action( 'wp_ajax_mmyAction', 'mmyAction_callback' );
 add_action( 'wp_ajax_nopriv_mmyAction', 'mmyAction_callback' );
