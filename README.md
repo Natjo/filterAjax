@@ -3,9 +3,9 @@
 
 ![version](https://img.shields.io/github/manifest-json/v/Natjo/filterAjax)
 
-Ajax form filter with inline template for item and more button.  
+Ajax form filter with inline item template and more result button.  
 
-## Form filter
+## Form
 `data-items-per-page` - number of items to show  
 `data-current-page` - initial page depending of the items in th DOM. 
 
